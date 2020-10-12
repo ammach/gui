@@ -49,7 +49,14 @@ export class Accordion extends React.Component {
             {this.props.renderedParagraphs}
             {!!this.props.source && (
               <div className="panel-section-source">
-                Source : <a href={this.props.source}>{this.props.source}</a>
+                Source :{" "}
+                <a
+                  href={this.props.source}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  {this.props.source}
+                </a>
               </div>
             )}
           </div>
