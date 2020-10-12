@@ -4,7 +4,7 @@ import "./header.css";
 export function Header(props) {
   return (
     <div className={`${props.className} header-container`}>
-      {props.children}
+      <div className="size-picture">{props.children}</div>
     </div>
   );
 }
