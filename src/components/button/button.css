@@ -28,8 +28,13 @@
 }
 
 @media (max-width: 767px) {
+  .login-container-mobile .custom-btn {
+    height: 35px;
+  }
+
   .custom-btn {
     width: 100%;
+    height: 40px;
   }
 }
 
@@ -37,7 +42,7 @@
   .custom-btn {
     width: 100%;
     font-size: 22px;
-    height: 45px;
+    height: 70px;
   }
 
   .ant-btn-round {
