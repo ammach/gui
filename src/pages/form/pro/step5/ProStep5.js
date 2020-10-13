@@ -107,6 +107,7 @@ export function ProStep5({ step, setNextStep }) {
   }, [question5trajetsAr]);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const setReponsesOfStep = (stepState) => {
       stepState.forEach(({ question, response, actions }) => {
         form.setFieldsValue({

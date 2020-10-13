@@ -66,6 +66,7 @@ export function PersoStep6({ step, setNextStep }) {
     value === "Essence" || value === "Diesel" ? "gasoline" : "electric";
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const setReponsesOfStep = (stepState) => {
       stepState.forEach(({ question, response, actions }) => {
         form.setFieldsValue({

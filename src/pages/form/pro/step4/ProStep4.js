@@ -49,6 +49,7 @@ export function ProStep4({ step, setNextStep }) {
   }, [modeDeplacement]);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const setReponsesOfStep = (stepState) => {
       stepState.forEach(({ question, response, actions }) => {
         form.setFieldsValue({
