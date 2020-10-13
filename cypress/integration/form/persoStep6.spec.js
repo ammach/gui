@@ -139,7 +139,7 @@ context('Form | Déplacements step', () => {
 				cy.login('email@paris2024.org');
 				cy.visit('/form');
 
-				cy.get('button span:contains(suite)').click();
+				cy.get('button span:contains(suite)').click({force: true});
 
 				cy.get('.ant-form-item-explain div:contains("⚠ Merci de saisir votre réponse")')
 					.should(($el) => {

@@ -271,7 +271,7 @@ export function PersoStep1({ step, setNextStep }) {
       <div className="forms-margin">
         <FormItemActionReduction
           form={form}
-          title="Dejeuners"
+          title="Déjeuners"
           savierVous={HOUSE_SAVIEZ_VOUS}
           saviezVousPosition={1}
           selectDetail={selectDetailLunch}
