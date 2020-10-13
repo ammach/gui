@@ -31,6 +31,7 @@ export function ProStep1({ step, setNextStep }) {
   const [nbrEcrans, setNbrEcrans] = useState(0);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const setReponsesOfStep = (stepState) => {
       stepState.forEach(({ question, response }) => {
         form.setFieldsValue({
