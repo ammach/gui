@@ -136,7 +136,13 @@ export function HomePage(props) {
       <div className="section-footer">
         <div className="website-info">{WEBSITE_INFO_MSG}</div>
         <div className="website-url">
-          <a href="#0">{WEBSITE_URL}</a>
+          <a
+            href="https://www.paris2024.org/fr/methode-carbone"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            {WEBSITE_URL}
+          </a>
         </div>
         <div className="website-invite">{WEBSITE_INVITATION_MSG}</div>
       </div>
