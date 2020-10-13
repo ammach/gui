@@ -23,11 +23,11 @@ export const proItems = [
 
 export const persoItems = [
   {
-    title: "A la maison",
+    title: "À la maison",
     description: "12 questions",
   },
   {
-    title: "Equipement du logement",
+    title: "Équipement du logement",
     description: "12 questions",
   },
   {
@@ -53,9 +53,9 @@ export const persoItems = [
 ];
 
 export const CATEGORY = {
-  PRO: "vie professionnelle",
-  PERSO: "vie personnelle",
-  RESULTS: "résultats",
+  PRO: "Vie professionnelle",
+  PERSO: "Vie personnelle",
+  RESULTS: "Résultats",
 };
 
 const config = {

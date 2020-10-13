@@ -34,9 +34,9 @@ export function IntroPage() {
       .then((response) => {
         setUserProgress(response.progress);
         if (response.progress === "VIE_PROFESIONAL") {
-          setPath("vie professionnelle");
+          setPath("Vie professionnelle");
         } else if (response.progress === "RESULTATS") {
-          setPath("résultats");
+          setPath("Résultats");
         }
       })
       .catch(() => {

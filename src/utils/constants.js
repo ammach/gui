@@ -244,7 +244,7 @@ export const DEPLACEMENTS_SAVIEZ_VOUS =
   "Un vol Paris-New York, c’est une tonne de CO2 dans l’atmosphère, soit la moitié de l’empreinte\n" +
   "carbone visée pour 2050… Le calcul est vite fait : privilégie la mobilité douce !";
 
-// A la maison
+// À la maison
 export const HOUSE_QUESTION1 = "Nombre d'adultes du logement";
 export const HOUSE_QUESTION2 =
   "Consommation annuelle d'Electricité de votre logement";
@@ -291,7 +291,7 @@ export const NUMERIC_QUESTION2_LABEL =
 export const NUMERIC_SAVIEZ_VOUS =
   "Utiliser le wifi plutôt que la 4G pour le streaming vidéo et gaming permet de consommer presque 6 fois moins d'électricité.";
 
-//Equipement
+//Équipement
 export const EQUIPMENT_QUESTION1 = "Nombre de réfrigérateurs";
 export const EQUIPMENT_QUESTION2 = "Nombre de congélateurs";
 export const EQUIPMENT_QUESTION3 = "Nombre de lave-linge et sèche-linge";
