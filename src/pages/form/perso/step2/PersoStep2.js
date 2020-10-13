@@ -32,7 +32,7 @@ import {
   equipmentstep2State,
   equipment2ActionReductionState,
 } from "./step2State";
-// Equipement du logement
+// Équipement du logement
 export function PersoStep2({ step, setNextStep }) {
   const [form] = Form.useForm();
   const [render, setRender] = useState(0);
@@ -124,7 +124,7 @@ export function PersoStep2({ step, setNextStep }) {
     >
       <div className="wizard-content-right-form-parent">
         <div className="pro-step-title-container">
-          <span className="pro-step-title">Equipement du logement</span>
+          <span className="pro-step-title">Équipement du logement</span>
         </div>
         <div className="forms-margin">
           <FormCounter

@@ -89,7 +89,7 @@ export const config = {
     },
     next: {
       category: CATEGORY.PERSO,
-      details: "A la maison",
+      details: "À la maison",
     },
   },
   6: {
@@ -102,7 +102,7 @@ export const config = {
     },
     next: {
       category: CATEGORY.PERSO,
-      details: "Equipement du logement",
+      details: "Équipement du logement",
     },
   },
   7: {
@@ -111,7 +111,7 @@ export const config = {
     progress: 1,
     previous: {
       category: CATEGORY.PERSO,
-      details: "A la maison",
+      details: "À la maison",
     },
     next: {
       category: CATEGORY.PERSO,
@@ -124,7 +124,7 @@ export const config = {
     progress: 2,
     previous: {
       category: CATEGORY.PERSO,
-      details: "Equipement du logement",
+      details: "Équipement du logement",
     },
     next: {
       category: CATEGORY.PERSO,

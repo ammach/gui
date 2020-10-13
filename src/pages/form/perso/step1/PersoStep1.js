@@ -44,7 +44,7 @@ import {
 } from "./step1Config";
 import { housestep1State, house1ActionReductionState } from "./step1State";
 
-// A la maison
+// À la maison
 export function PersoStep1({ step, setNextStep }) {
   const mainColor = getColor("--main-color");
   const [form] = Form.useForm();
@@ -271,7 +271,7 @@ export function PersoStep1({ step, setNextStep }) {
       <div className="forms-margin">
         <FormItemActionReduction
           form={form}
-          title="Dejeuners"
+          title="Déjeuners"
           savierVous={HOUSE_SAVIEZ_VOUS}
           saviezVousPosition={1}
           selectDetail={selectDetailLunch}
