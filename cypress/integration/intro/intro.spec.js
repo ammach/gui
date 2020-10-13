@@ -39,7 +39,7 @@ context('Intro page', () => {
 				win.sessionStorage.clear();
 				cy.login('email@paris2024.org');
 
-				const openModalBtnSelector = '.header-container > .ant-btn';
+				const openModalBtnSelector = '.header-container > .size-picture > .ant-btn';
 				cy.get(openModalBtnSelector).click();
 
 				cy.get('body:contains(à propos)')
