@@ -50,6 +50,7 @@ export function ProStep2({ step, setNextStep }) {
   }, [form]);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const setReponsesOfStep = (stepState) => {
       stepState.forEach(({ question, response, actions }) => {
         form.setFieldsValue({
@@ -128,7 +129,7 @@ export function ProStep2({ step, setNextStep }) {
           <FormItemInputNumber
             name="5f554eddc68dd"
             label={TAILLE_STOCKAGE}
-            rules={[{ required: true, message: TAILLE_BOITE_ERROR_MSG }]}
+            disabled={true}
           />
         </div>
 

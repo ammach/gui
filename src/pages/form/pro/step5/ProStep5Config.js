@@ -88,13 +88,13 @@ export const actionReductionData = [
     type: "input",
     name: "5f60a0f2df4e3",
     firstText: "Prendre le TGV plutôt que l'avion pour",
-    secondText: "des distances en vol court courrier",
+    secondText: " % des distances en vol court courrier",
   },
   {
     type: "input",
     name: "5f60a102140c9",
     firstText: "Réduire de",
     secondText:
-      "les distances professionnelles parcourues annuellement grâce à la visioconférence notamment",
+      " % les distances professionnelles parcourues annuellement grâce à la visioconférence notamment",
   },
 ];

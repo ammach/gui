@@ -6,7 +6,13 @@ import { FormItem } from "@components/form/formItem/FormItem";
 import { useTabletSize } from "@hooks/window";
 import "./formItemInputNumber.css";
 
-export function FormItemInputNumber({ label, name, rules, tooltipTitle }) {
+export function FormItemInputNumber({
+  label,
+  name,
+  rules,
+  tooltipTitle,
+  disabled,
+}) {
   const isTablet = useTabletSize();
   const mainColor = getColor("--main-color");
   const inputRef = useRef();
@@ -44,6 +50,7 @@ export function FormItemInputNumber({ label, name, rules, tooltipTitle }) {
         onFocus={onFocus}
         onBlur={onBlur}
         min={0}
+        {...(disabled && { disabled: disabled })}
       />
     </FormItem>
   );
