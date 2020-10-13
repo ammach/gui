@@ -4,6 +4,7 @@ import { Form as ConfiguredForm } from "@components/form/Form";
 import { FormItemInputNumber } from "@components/form/formItemInputNumber/FormItemInputNumber";
 import { FormItemMultipleInputNumber } from "@components/form/formItemMultipleInputNumber/FormItemMultipleInputNumber";
 import { FormItemActionReduction } from "@components/form/action/formItemActionReduction/FormItemActionReduction";
+import { TitleWithHorizontalLine } from "@components/title/TitleWithHorizontalLine";
 import { proStep5State, proStep5ActionReductionState } from "./ProStep5State";
 import {
   NBR_KM_VOITURE,
@@ -50,7 +51,7 @@ export function ProStep5({ step, setNextStep }) {
   };
 
   // tarjets AR data pour les champs de saisies
-  const trajetsARIndex = [2, 3, 4, 5, 6, 7];
+  const trajetsARIndex = [2, 3, 4, 5, 6];
   const trajetsARDynamicProps = [
     {
       label: QUESTION2_NBR_TRAJETS_AR,
@@ -72,10 +73,6 @@ export function ProStep5({ step, setNextStep }) {
     {
       label: QUESTION6_NBR_TRAJETS_AR,
       name: "5f55582edaeda",
-    },
-    {
-      label: QUESTION7_NBR_TRAJETS_AR,
-      name: "5f55584be6d5b",
     },
   ];
 
@@ -164,12 +161,17 @@ export function ProStep5({ step, setNextStep }) {
           <span className="pro-step-title">Déplacements professionnels</span>
         </div>
 
-        <FormItemInputNumber
-          name="5f5557936a4cd"
-          label={NBR_KM_VOITURE}
-          rules={[{ required: true, message: DEPLACEMENT_MSG_ERROR }]}
-        />
-
+        <TitleWithHorizontalLine title="En voiture" />
+        <div className="forms-margin">
+          <FormItemInputNumber
+            name="5f5557936a4cd"
+            label={NBR_KM_VOITURE}
+            rules={[{ required: true, message: DEPLACEMENT_MSG_ERROR }]}
+          />
+        </div>
+        <div className="forms-margin">
+          <TitleWithHorizontalLine title="En train" />
+        </div>
         {trajetsARIndex.map((index, key) => (
           <div className="forms-margin" key={key}>
             <FormItemInputNumber
@@ -178,7 +180,16 @@ export function ProStep5({ step, setNextStep }) {
             />
           </div>
         ))}
-
+        <div className="forms-margin">
+          <TitleWithHorizontalLine title="En avion" />
+        </div>
+        <div className="forms-margin">
+          <FormItemInputNumber
+            rules={[{ required: true, message: DEPLACEMENT_MSG_ERROR }]}
+            label={QUESTION7_NBR_TRAJETS_AR}
+            name="5f55584be6d5b"
+          />
+        </div>
         {volsARIndex.map((index, key) => (
           <div className="forms-margin" key={key}>
             <FormItemMultipleInputNumber
