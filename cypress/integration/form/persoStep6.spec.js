@@ -106,7 +106,7 @@ context('Form | Déplacements step', () => {
 
 			cy.wait(1000);
 			cy.get('.footer-navigation-left span').contains('Déplacements').should('exist');
-			cy.get('.footer-navigation-right span').contains('résultats').should('exist');
+			cy.get('.footer-navigation-right span').contains('Résultats').should('exist');
 			cy.get('.footer-buttons-left button').click();
 			cy.get(`label[for="5f5575ba93b32"]`)
 				.parents('.ant-form-item')
