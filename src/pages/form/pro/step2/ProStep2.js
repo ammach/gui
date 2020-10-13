@@ -129,7 +129,7 @@ export function ProStep2({ step, setNextStep }) {
           <FormItemInputNumber
             name="5f554eddc68dd"
             label={TAILLE_STOCKAGE}
-            rules={[{ required: true, message: TAILLE_BOITE_ERROR_MSG }]}
+            disabled={true}
           />
         </div>
 
