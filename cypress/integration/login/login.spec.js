@@ -16,7 +16,7 @@ context("Login page", () => {
 
   const IDENTIFIER_REQUIRED = "Veuillez renseigner votre émail";
   const IDENTIFIER_NOT_VALID =
-    "Veuillez respecter le format d'émail (exemple@paris2024.org)";
+    "Veuillez respecter le format d’émail (exemple@paris2024.org)";
 
   it("should show email required when not enter email", () => {
     sizes.forEach((size) => {

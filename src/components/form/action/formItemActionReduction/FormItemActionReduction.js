@@ -163,7 +163,7 @@ export function FormItemActionReduction({
                         </div>
 
                         <div className="info-container-content">
-                          <h2 className="info-savier-vous">Le savier-vous ?</h2>
+                          <h2 className="info-saviez-vous">Le saviez-vous ?</h2>
                           <span className="savier-vous-detail">{detail}</span>
                           {showAllDetail && (
                             <div>
