@@ -170,7 +170,6 @@ export function PersoStep3({ step, setNextStep }) {
             form={form}
             name="5f55692a73b55"
             label={MATERIELS_QUESTION4_LABEL}
-            rules={[{ required: true, message: MATERIELS_QUESTIONS_ERROR_MSG }]}
             unit="ans"
             value={question4}
             onChange={onchange}
@@ -187,7 +186,6 @@ export function PersoStep3({ step, setNextStep }) {
             form={form}
             name="5f5569587abe3"
             label={MATERIELS_QUESTION6_LABEL}
-            rules={[{ required: true, message: MATERIELS_QUESTIONS_ERROR_MSG }]}
             unit="ans"
             value={question6}
             onChange={onchange}
@@ -204,7 +202,6 @@ export function PersoStep3({ step, setNextStep }) {
             form={form}
             name="5f55697f50057"
             label={MATERIELS_QUESTION8_LABEL}
-            rules={[{ required: true, message: MATERIELS_QUESTIONS_ERROR_MSG }]}
             unit="ans"
             value={question8}
             onChange={onchange}
@@ -228,7 +225,6 @@ export function PersoStep3({ step, setNextStep }) {
             form={form}
             name="5f556b3b7aeaf"
             label={MATERIELS_QUESTION11_LABEL}
-            rules={[{ required: true, message: MATERIELS_QUESTIONS_ERROR_MSG }]}
             unit="ans"
             value={question11}
             onChange={onchange}
@@ -245,7 +241,6 @@ export function PersoStep3({ step, setNextStep }) {
             form={form}
             name="5f556b6cefd5a"
             label={MATERIELS_QUESTION13_LABEL}
-            rules={[{ required: true, message: MATERIELS_QUESTIONS_ERROR_MSG }]}
             unit="ans"
             value={question13}
             onChange={onchange}

@@ -278,7 +278,7 @@ export const HOUSE_ERROR_MSG = "⚠ Merci de saisir votre réponse";
 export const OVERLAY_TITLE_HOUSE =
   "Comment optimiser ta consommation d’énergie ?";
 export const OVERLAY_SOUSTEXTE_HOUSE =
-  "Encore plus de conseils pratiques sur : https://www.ademe.fr/sites/default/files/assets/documents/infographie-economiser-eau-energie-2019.pdf (ADEME, 2020)";
+  "https://www.ademe.fr/sites/default/files/assets/documents/infographie-economiser-eau-energie-2019.pdf";
 export const HOUSE_SAVIEZ_VOUS =
   "Adopter les bons gestes au quotidien peut faire économiser jusqu’à 0,5% par geste en moyenne ! Par exemple, aérer son logement quotidiennement rend l'air plus sec et le logement plus facilement chauffable, permettant d'économiser jusqu'à 2% de gaz naturel.";
 
@@ -321,7 +321,7 @@ export const MATERIELS_QUESTION2_LABEL =
   "Nombre de voitures Polyvalantes, Monospaces Compacts";
 export const MATERIELS_QUESTION3_LABEL =
   "Nombre de voitures SUV, berlines, monospaces";
-export const MATERIELS_QUESTION4_LABEL = "renouvelés tous les";
+export const MATERIELS_QUESTION4_LABEL = "Renouvelés tous les";
 export const MATERIELS_QUESTION5_LABEL = "Nombre d'Ordinateurs fixes";
 export const MATERIELS_QUESTION6_LABEL = "Renouvelés tous les";
 export const MATERIELS_QUESTION7_LABEL = "Nombre d'Ordinateurs portables";

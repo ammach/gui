@@ -150,7 +150,18 @@ export function PersoStep1({ step, setNextStep }) {
             items={[
               {
                 image: "/images/conseil.png",
-                sousText: OVERLAY_SOUSTEXTE_HOUSE,
+                sousText: [
+                  "Encore plus de conseils pratiques sur : ",
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "black" }}
+                    href={OVERLAY_SOUSTEXTE_HOUSE}
+                  >
+                    {OVERLAY_SOUSTEXTE_HOUSE}
+                  </a>,
+                  " (ADEME, 2020)",
+                ],
               },
             ]}
           />
