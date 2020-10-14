@@ -78,7 +78,11 @@ export function FormItemActionReduction({
     <div className={className} key={key}>
       <span className="input-detail">{data.firstText}&nbsp;</span>
       <FormItem className="input-action" name={data.name}>
-        <InputNumber min={0} max={form.getFieldValue(data.questionName)} />
+        <InputNumber
+          size="large"
+          min={0}
+          max={form.getFieldValue(data.questionName)}
+        />
       </FormItem>
       {data.secondText &&
         data.secondText.split(" ").map((mot, key) => (
@@ -144,7 +148,7 @@ export function FormItemActionReduction({
         key="1"
       >
         {isOpened && (
-          <div>
+          <div className="action-reduction-container">
             <div className="first-para">{FIRST_DETAIL}</div>
             {selectDetail.map(
               (data, key) =>
