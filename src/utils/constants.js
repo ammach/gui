@@ -175,7 +175,8 @@ export const SAVIER_VOUS_DEPLACEMENT =
   "Les émissions des vélos/trottinettes partagés électriques incluent une quote-part liée à leur fabrication (batterie au lithium). Ayant actuellement une faible durée vie en milieu urbain, la fabrication est proratisée sur un faible kilométrage parcouru.";
 
 // Déplacements
-export const REPAS_QUESTION1 = "Vos repas sont plutôt constitués de";
+export const REPAS_QUESTION1 =
+  "Vos repas sont plutôt constitués de viandes rouges, de viandes blanches/poissons ou végétariens";
 export const REPAS_QUESTION1_INFO =
   "Coche 5 cases pour tes 5 déjeuners au boulot de la semaine !";
 export const REPAS_QUESTION1_ERROR_MSG = "⚠ Merci de saisir votre réponse";
