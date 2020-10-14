@@ -58,13 +58,7 @@ export function HomePage(props) {
   return (
     <Fragment>
       <Header>
-        <img
-          className="logo"
-          src="/images/paris-2024.png"
-          alt="paris-2024"
-          width="260px"
-          height="132px"
-        />
+        <img className="logo" src="/images/paris-2024.png" alt="paris-2024" />
         <Button
           className="show-overlay-btn"
           type="primary"

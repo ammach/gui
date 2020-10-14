@@ -36,6 +36,7 @@
   .styled-title-form {
     font-size: 9vw;
     line-height: 7.5vw;
+    margin-top: 10vh;
   }
 
   .paris2024-title {
@@ -60,7 +61,7 @@
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .styled-title-form {
-    margin-top: 10vw;
+    margin-top: 10vh;
     font-size: 9vw;
     line-height: 7.5vw;
   }
