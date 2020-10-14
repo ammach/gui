@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import { Button } from "antd";
 import { ArrowRightOutlined } from "@ant-design/icons";
 import { Modal } from "@components/modal/Modal";
@@ -54,6 +54,9 @@ export function HomePage(props) {
   const onStart = () => {
     history.push("/intro");
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <Fragment>
