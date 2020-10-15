@@ -43,12 +43,7 @@ export function FormItemInputNumberWithUnit({
     form.setFieldsValue({
       [name]: newValue,
     });
-    inputRef.current.blur();
-    if (onChange) {
-      onChange();
-    }
   };
-
   return (
     <FormItem
       label={label}
