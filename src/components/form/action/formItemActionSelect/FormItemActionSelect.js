@@ -1,11 +1,9 @@
 import React from "react";
 import { Select } from "antd";
 import { FormItem } from "@components/form/formItem/FormItem";
-import { useTabletSize } from "@hooks/window";
 import "./formItemActionSelect.css";
 
 export function FormItemActionSelect({ name, options, onChange }) {
-  const isTablet = useTabletSize();
   const { Option } = Select;
 
   return (
@@ -15,7 +13,7 @@ export function FormItemActionSelect({ name, options, onChange }) {
       initialValue={options[0].value}
     >
       <Select
-        size={isTablet ? "large" : "default"}
+        size="large"
         id={name}
         aria-label="select-action"
         aria-expanded

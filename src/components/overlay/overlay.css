@@ -91,7 +91,7 @@
 .custom-modal .ant-modal-content {
   background-color: var(--main-color);
   border-radius: 32px;
-  height: 28vw;
+  height: 100%;
 }
 .custom-modal .ant-carousel .slick-dots li.slick-active button {
   width: 50%;
@@ -172,7 +172,7 @@
   .custom-modal .ant-modal-content {
     margin: 10%;
     top: 6vw;
-    height: 140vw;
+    height: 100%;
   }
   .modal-close-btn-modal,
   .modal-close-btn-modal:hover {
@@ -239,11 +239,6 @@
     width: 44vw;
   }
 
-  .custom-modal {
-    width: 80%;
-    height: 80%;
-  }
-
   .modal-close-btn-modal,
   .modal-close-btn-modal:hover {
     height: 70px;
@@ -260,7 +255,7 @@
   .custom-modal .ant-modal-content {
     margin: 0%;
     top: 6vw;
-    height: 100vw;
+    height: 100%;
     border-radius: 55px;
   }
 
