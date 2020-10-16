@@ -61,7 +61,7 @@
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .styled-title-form {
-    margin-top: 10vh;
+    margin-top: 10vw;
     font-size: 9vw;
     line-height: 7.5vw;
   }
