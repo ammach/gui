@@ -63,6 +63,7 @@
   .panel-section-source {
     font-size: 4vw;
     word-wrap: break-word;
+    line-height: normal;
   }
 }
 
@@ -70,6 +71,7 @@
   .panel-section-source {
     font-size: 3vw;
     word-wrap: break-word;
+    line-height: normal;
   }
 
   .accordion > h3 {

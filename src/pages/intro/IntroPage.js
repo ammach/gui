@@ -42,6 +42,7 @@ export function IntroPage() {
       .catch(() => {
         setUserProgress("error");
       });
+    window.scrollTo(0, 0);
   }, []);
 
   const getRoute = () => {
