@@ -17,6 +17,7 @@ import {
   ABOUT_CONTENT3,
   NAVIGATION_HOME,
 } from "@utils/constants";
+import { scrollToTopOfThePage } from "@hooks/window";
 import { Button as ButtonAntd } from "antd";
 import "./introPage.css";
 import { useHistory } from "react-router-dom";
@@ -42,7 +43,7 @@ export function IntroPage() {
       .catch(() => {
         setUserProgress("error");
       });
-    window.scrollTo(0, 0);
+    scrollToTopOfThePage();
   }, []);
 
   const getRoute = () => {

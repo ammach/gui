@@ -5,13 +5,14 @@ import { FormItemActionSelect } from "@components/form/action/formItemActionSele
 import { ReactComponent as ActionReductionIcon } from "@theme/icons/action-reduction-icon.svg";
 import { ReactComponent as SavierVousIcon } from "@theme/icons/savier-vous-icon.svg";
 import { FormItem } from "@components/form/formItem/FormItem";
-import "./formItemActionReduction.css";
+import { useTabletSize } from "@hooks/window";
 import {
   ACTIONS_REDUCTION,
   FIRST_DETAIL,
   LIRE_MOINS,
   LIRE_PLUS,
 } from "@utils/constants";
+import "./formItemActionReduction.css";
 
 export function FormItemActionReduction({
   form,
@@ -22,8 +23,8 @@ export function FormItemActionReduction({
   selectDetail,
   savierVous,
   saviezVousPosition,
-  render,
 }) {
+  const isTablet = useTabletSize();
   const { Panel } = Collapse;
   const [showAllDetail, setShowAllDetail] = useState(false);
   const [detail, setDetail] = useState(savierVous);
@@ -76,16 +77,20 @@ export function FormItemActionReduction({
 
   const input = (className, key, data) => (
     <div className={className} key={key}>
-      <span className="input-detail">{data.firstText}&nbsp;</span>
+      {data.firstText.split(" ").map((mot, key) => (
+        <span key={key}>{mot}&nbsp;</span>
+      ))}
       <FormItem className="input-action" name={data.name}>
-        <InputNumber min={0} max={form.getFieldValue(data.questionName)} />
+        <InputNumber
+          size={isTablet ? "large" : "middle"}
+          min={0}
+          max={form.getFieldValue(data.questionName)}
+        />
       </FormItem>
       {data.secondText &&
-        data.secondText.split(" ").map((mot, key) => (
-          <span className="input-detail" key={key}>
-            &nbsp;{mot}
-          </span>
-        ))}
+        data.secondText
+          .split(" ")
+          .map((mot, key) => <span key={key}>&nbsp;{mot}</span>)}
     </div>
   );
 
@@ -93,7 +98,9 @@ export function FormItemActionReduction({
     const options = data.questionName ? getOptions(data) : data.options;
     return (
       <div className={className} key={key}>
-        <span>{data.firstText}&nbsp;</span>
+        {data.firstText.split(" ").map((mot, key) => (
+          <span key={key}>{mot}&nbsp;</span>
+        ))}
         <FormItemActionSelect name={data.name} options={options} />
         {data.secondText &&
           data.secondText
@@ -144,7 +151,7 @@ export function FormItemActionReduction({
         key="1"
       >
         {isOpened && (
-          <div>
+          <div className="action-reduction-container">
             <div className="first-para">{FIRST_DETAIL}</div>
             {selectDetail.map(
               (data, key) =>
@@ -154,7 +161,7 @@ export function FormItemActionReduction({
                       {(data.type === "select" &&
                         select("select-content", key, data)) ||
                         (data.type === "input" &&
-                          input("select-content", key, data))}
+                          input("select-content input-text-action", key, data))}
                     </div>
                     {savierVous && (
                       <div className="info-container">
@@ -193,7 +200,7 @@ export function FormItemActionReduction({
                     {(data.type === "select" &&
                       select("select-content", key, data)) ||
                       (data.type === "input" &&
-                        input("select-content", key, data))}
+                        input("select-content input-text-action", key, data))}
                   </div>
                 )
             )}

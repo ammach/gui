@@ -18,6 +18,7 @@ import {
   EQUIPMENT_ERROR_MSG,
   EQUIPMENT_SAVIEZ_VOUS,
 } from "@utils/constants";
+import { scrollToTopOfThePage } from "@hooks/window";
 import { optionsFibre, selectDetailEquipment } from "./step2Config";
 import {
   saveResponsesOfQuestionsStep,
@@ -55,7 +56,7 @@ export function PersoStep2({ step, setNextStep }) {
   };
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    scrollToTopOfThePage();
     const setReponsesOfStep = (stepState) => {
       stepState.forEach(({ question, response, actions }) => {
         form.setFieldsValue({

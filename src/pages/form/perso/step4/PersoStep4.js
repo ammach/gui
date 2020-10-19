@@ -10,6 +10,7 @@ import {
   getResponsesOfQuestionsOfStep,
   getSettingsOfStep,
 } from "@services/responseService";
+import { scrollToTopOfThePage } from "@hooks/window";
 import {
   overlay_items,
   question1_questions,
@@ -34,7 +35,7 @@ export function PersoStep4({ step, setNextStep }) {
   };
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    scrollToTopOfThePage();
     const setReponsesOfStep = (stepState) => {
       stepState.forEach(({ question, response, actions }) => {
         form.setFieldsValue({

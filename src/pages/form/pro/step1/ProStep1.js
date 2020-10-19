@@ -13,6 +13,7 @@ import {
   TITLE_TELEPHONES,
   TITLE_ECRANS,
 } from "@utils/constants";
+import { scrollToTopOfThePage } from "@hooks/window";
 import {
   saveResponsesOfQuestionsStep,
   getResponsesOfQuestionsOfStep,
@@ -31,7 +32,7 @@ export function ProStep1({ step, setNextStep }) {
   const [nbrEcrans, setNbrEcrans] = useState(0);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    scrollToTopOfThePage();
     const setReponsesOfStep = (stepState) => {
       stepState.forEach(({ question, response }) => {
         form.setFieldsValue({

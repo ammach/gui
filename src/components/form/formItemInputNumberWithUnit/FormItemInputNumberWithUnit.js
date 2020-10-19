@@ -43,7 +43,6 @@ export function FormItemInputNumberWithUnit({
     form.setFieldsValue({
       [name]: newValue,
     });
-    inputRef.current.blur();
     if (onChange) {
       onChange();
     }
@@ -65,6 +64,7 @@ export function FormItemInputNumberWithUnit({
         onChange={onDefaultChange}
         value={form.getFieldValue(name)}
         min={0}
+        id={name}
       />
       <span ref={inputUnitRef} className="input-unit">
         {unit}

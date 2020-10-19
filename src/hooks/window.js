@@ -41,3 +41,7 @@ export function useTabletOrMobileSize() {
 
   return width <= 1024;
 }
+
+export function scrollToTopOfThePage() {
+  window.scrollTo(0, 0);
+}

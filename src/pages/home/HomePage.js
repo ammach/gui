@@ -44,6 +44,7 @@ import {
   CONTACT_CALL_TENDER,
   CONTACT_TERMS_PURCHASE,
 } from "@utils/constants";
+import { scrollToTopOfThePage } from "@hooks/window";
 import { useHistory } from "react-router-dom";
 import "./homePage.css";
 
@@ -55,7 +56,7 @@ export function HomePage(props) {
     history.push("/intro");
   };
   useEffect(() => {
-    window.scrollTo(0, 0);
+    scrollToTopOfThePage();
   }, []);
 
   return (

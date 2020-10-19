@@ -19,19 +19,23 @@ import {
   saveSettingsStep,
   getSettingsOfStep,
 } from "@services/responseService";
+import { scrollToTopOfThePage } from "@hooks/window";
 import {
   modeDeplacementOptions,
   motorisationOptions,
   actionReductionData,
+  electricTravelModes,
 } from "./ProStep4Config";
 
 // Trajets
 export function ProStep4({ step, setNextStep }) {
   const [form] = Form.useForm();
-
   const [switchValue, setSwitchValue] = useState(true);
   const [modeDeplacement, setModeDeplacement] = useState(
     modeDeplacementOptions[0].value
+  );
+  const [motorisationOptionsState, setMotorisationOptionsState] = useState(
+    motorisationOptions
   );
 
   const handleSwitchChange = (isChecked) => {
@@ -39,17 +43,32 @@ export function ProStep4({ step, setNextStep }) {
   };
 
   const handleModeDeplacementChange = (mode) => {
+    const motorisationName = "5f555681b8e00";
     setModeDeplacement(mode);
+    if (electricTravelModes.includes(mode)) {
+      setMotorisationOptionsState([
+        { text: "Électrique", value: "electrique" },
+      ]);
+      form.setFieldsValue({
+        [motorisationName]: "electrique",
+      });
+    } else {
+      setMotorisationOptionsState(motorisationOptions);
+    }
   };
 
   useEffect(() => {
     if (modeDeplacement === "pied-velo") {
       setSwitchValue(true);
+    } else if (electricTravelModes.includes(modeDeplacement)) {
+      setMotorisationOptionsState([
+        { text: "Électrique", value: "electrique" },
+      ]);
     }
   }, [modeDeplacement]);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    scrollToTopOfThePage();
     const setReponsesOfStep = (stepState) => {
       stepState.forEach(({ question, response, actions }) => {
         form.setFieldsValue({
@@ -129,12 +148,8 @@ export function ProStep4({ step, setNextStep }) {
             name="5f555681b8e00"
             label={MOTORISATION}
             tooltipTitle={MOTORISATION_INFOS}
-            options={motorisationOptions}
-            disabled={
-              modeDeplacement === "metro-tramway" ||
-              modeDeplacement === "train-rer" ||
-              modeDeplacement === "tgv"
-            }
+            options={motorisationOptionsState}
+            disabled={modeDeplacement === "pied-velo"}
           />
         </div>
       </div>

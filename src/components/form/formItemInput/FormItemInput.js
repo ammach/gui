@@ -48,7 +48,7 @@ export function FormItemInput({
       tooltipTitle={tooltipTitle}
     >
       <Input
-        size={isTablet ? "large" : "default"}
+        size={isTablet ? "large" : "middle"}
         ref={inputRef}
         onFocus={onFocus}
         onBlur={onBlur}

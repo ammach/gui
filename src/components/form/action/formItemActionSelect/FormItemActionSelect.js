@@ -15,7 +15,7 @@ export function FormItemActionSelect({ name, options, onChange }) {
       initialValue={options[0].value}
     >
       <Select
-        size={isTablet ? "large" : "default"}
+        size={isTablet ? "large" : "middle"}
         id={name}
         aria-label="select-action"
         aria-expanded

@@ -25,7 +25,7 @@ import {
   DEPLACEMENTS_QUESTION1_ERROR_MSG,
   DEPLACEMENTS_SAVIEZ_VOUS,
 } from "@utils/constants";
-
+import { scrollToTopOfThePage } from "@hooks/window";
 import {
   question2_options,
   actionReduction1_selectDetail,
@@ -66,7 +66,7 @@ export function PersoStep6({ step, setNextStep }) {
     value === "Essence" || value === "Diesel" ? "gasoline" : "electric";
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    scrollToTopOfThePage();
     const setReponsesOfStep = (stepState) => {
       stepState.forEach(({ question, response, actions }) => {
         form.setFieldsValue({

@@ -60,7 +60,7 @@ export function FormItemSelect({
       initialValue={options[0].value}
     >
       <Select
-        size={isTablet ? "large" : "default"}
+        size={isTablet ? "large" : "middle"}
         ref={(select) => (selectRef = select)}
         dropdownClassName="select"
         onFocus={onFocus}

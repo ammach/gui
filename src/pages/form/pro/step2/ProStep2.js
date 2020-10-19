@@ -23,6 +23,7 @@ import {
   saveSettingsStep,
   getSettingsOfStep,
 } from "@services/responseService";
+import { scrollToTopOfThePage } from "@hooks/window";
 import {
   QUESTION2_DEFAULT_VALUE,
   overlayItems,
@@ -50,7 +51,7 @@ export function ProStep2({ step, setNextStep }) {
   }, [form]);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    scrollToTopOfThePage();
     const setReponsesOfStep = (stepState) => {
       stepState.forEach(({ question, response, actions }) => {
         form.setFieldsValue({

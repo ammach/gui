@@ -1,3 +1,7 @@
+.action-reduction-container {
+  margin: 16px 0;
+}
+
 .collapse-custom {
   width: 100%;
   background: var(--main-color);
@@ -9,7 +13,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 7vw;
+  margin: 0 7vw;
   cursor: default;
 }
 
@@ -24,7 +28,7 @@
   flex-direction: row;
   background-color: #6c633c;
   padding: 20px 7vw;
-  margin: 12px 0;
+  margin-top: 10px;
 }
 
 .info-container-content {
@@ -83,7 +87,7 @@
   font-size: 16px;
   line-height: 20px;
   color: black;
-  margin: 0px 38px 20px 154px;
+  margin: 0px 7vw 1vw 154px;
 }
 
 .select-content {
@@ -97,15 +101,10 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 30px;
-  margin: 0 0 20px 0;
 }
 
 .detail {
-  margin: 0 7vw;
-}
-
-.input-detail {
-  margin-top: 4px;
+  margin: 24px 7vw 0 7vw;
 }
 
 .input-action {
@@ -151,18 +150,32 @@
   display: none;
 }
 
+.collapse-custom .ant-form-item {
+  margin-bottom: 18px;
+}
+
+.action-reduction-container .ant-form-item {
+  margin-bottom: 0px;
+}
+
+.action-reduction-container .ant-form-vertical .ant-form-item-label,
+.action-reduction-container .ant-col-24.ant-form-item-label,
+.action-reduction-container .ant-col-xl-24.ant-form-item-label {
+  padding: 0px;
+}
+
 @media (max-width: 767px) {
   .panel-header {
-    padding-left: 32px;
-    padding-right: 32px;
+    margin: 0 32px;
   }
 
   .first-para {
-    margin: 0 32px 20px 80px;
+    margin: 0 32px 20px 82px;
   }
 
   .info-container {
-    padding: 20px 30px;
+    padding: 20px 32px;
+    margin-top: 16px;
   }
 
   .info-container-icon {
@@ -170,27 +183,23 @@
   }
 
   .detail {
-    margin: 32px 32px 0;
+    margin: 22px 32px 0px 32px;
   }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .panel-header {
-    padding-left: 38px;
-    padding-right: 38px;
+    margin: 0 7vw;
   }
 
   .select-content {
     font-size: 24px;
-    line-height: 18px;
-  }
-
-  .detail {
-    margin: 0px 50px 30px 50px;
+    line-height: 40px;
   }
 
   .info-container {
-    padding: 20px 38px;
+    padding: 20px 7vw;
+    margin-top: 16px;
   }
 
   .panel-header-span-first-title {
@@ -205,7 +214,7 @@
   .first-para {
     font-size: 23px;
     line-height: 30px;
-    margin: 12px 38px 20px 98px;
+    margin: 12px 38px 20px 114px;
   }
 
   .info-savier-vous {

@@ -39,11 +39,7 @@ export const proStep4State = (values) => {
     },
   ];
 
-  if (
-    values["5f55561b34276"] !== "metro-tramway" &&
-    values["5f55561b34276"] !== "train-rer" &&
-    values["5f55561b34276"] !== "tgv"
-  ) {
+  if (values["5f55561b34276"] !== "pied-velo") {
     stepState.push({
       question: "5f555681b8e00",
       response: values["5f555681b8e00"],

@@ -27,6 +27,7 @@ import {
   saveSettingsStep,
   getSettingsOfStep,
 } from "@services/responseService";
+import { scrollToTopOfThePage } from "@hooks/window";
 import {
   question8options,
   question9options,
@@ -104,7 +105,7 @@ export function ProStep5({ step, setNextStep }) {
   }, [question5trajetsAr]);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    scrollToTopOfThePage();
     const setReponsesOfStep = (stepState) => {
       stepState.forEach(({ question, response, actions }) => {
         form.setFieldsValue({

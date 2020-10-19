@@ -1,5 +1,6 @@
 import { Form } from "antd";
 import React, { useEffect, useState } from "react";
+import { scrollToTopOfThePage } from "@hooks/window";
 import { Form as ConfiguredForm } from "@components/form/Form";
 import { ReactComponent as TeaSvg } from "@components/form/formSlider/tea.svg";
 import { ReactComponent as CapsuleSvg } from "@components/form/formSlider/capsule.svg";
@@ -56,7 +57,7 @@ export function ProStep3({ step, setNextStep }) {
   };
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    scrollToTopOfThePage();
     const setReponsesOfStep = (stepState) => {
       stepState.forEach(({ question, response, actions }) => {
         form.setFieldsValue({

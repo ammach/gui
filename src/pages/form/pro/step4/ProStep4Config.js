@@ -1,3 +1,11 @@
+export const electricTravelModes = [
+  "velo-electrique",
+  "trottinette-electrique",
+  "metro-tramway",
+  "train-rer",
+  "tgv",
+];
+
 export const modeDeplacementOptions = [
   { text: "A pied / en vélo", value: "pied-velo" },
   { text: "En vélo électrique", value: "velo-electrique" },
@@ -21,7 +29,7 @@ export const modeDeplacementOptions = [
 export const motorisationOptions = [
   { text: "Essence", value: "essence" },
   { text: "Diesel", value: "diesel" },
-  { text: "Electrique", value: "electrique" },
+  { text: "Électrique", value: "electrique" },
   { text: "GPL", value: "gpl" },
   { text: "Hybride essence", value: "hybride-essence" },
   { text: "Hybride diesel", value: "hybride-diesel" },

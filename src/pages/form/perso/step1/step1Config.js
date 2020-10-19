@@ -9,8 +9,10 @@ export const optionsClasses = [
 ];
 
 export const optionsLogement = [
-  { text: "Oui", value: "Oui" },
-  { text: "Non", value: "Non" },
+  { text: "Avant 1980", value: "Avant 1980" },
+  { text: "Entre 1980 et 2005", value: "Entre 1980 et 2005" },
+  { text: "Entre 2005 et 2012", value: "Entre 2005 et 2012" },
+  { text: "Après 2012", value: "Après 2012" },
 ];
 
 const options = [

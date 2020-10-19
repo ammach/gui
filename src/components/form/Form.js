@@ -50,6 +50,7 @@ export function Form({
       onFinish={onFinish}
       onFinishFailed={onDefaultFinishFailed}
       onFieldsChange={onFieldsChange}
+      scrollToFirstError={true}
     >
       {children}
     </FormAntd>

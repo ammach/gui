@@ -36,6 +36,7 @@ import {
   saveSettingsStep,
   getSettingsOfStep,
 } from "@services/responseService";
+import { scrollToTopOfThePage } from "@hooks/window";
 import { step5State, step5ActionReductionState } from "./step5State";
 import {
   question2_subQuestions,
@@ -87,7 +88,7 @@ export function PersoStep5({ step, setNextStep }) {
   };
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    scrollToTopOfThePage();
     const setReponsesOfStep = (stepState) => {
       stepState.forEach(({ question, response, actions }) => {
         form.setFieldsValue({

@@ -45,7 +45,7 @@ export function FormItemInputNumber({
       tooltipTitle={tooltipTitle}
     >
       <InputNumber
-        size={isTablet ? "large" : "default"}
+        size={isTablet ? "large" : "middle"}
         ref={inputRef}
         onFocus={onFocus}
         onBlur={onBlur}

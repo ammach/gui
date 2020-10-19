@@ -45,6 +45,7 @@
   }
 
   .show-modal-btn {
+    position: absolute;
     font-size: 4vw;
     width: 40px;
     height: 40px;
@@ -54,6 +55,7 @@
   }
 
   .home-link {
+    position: absolute;
     top: 2vw;
     left: 2vw;
   }
@@ -72,6 +74,7 @@
   }
 
   .show-modal-btn {
+    position: absolute;
     font-size: 4vw;
     line-height: 36px;
     width: 70px;
@@ -82,6 +85,7 @@
   }
 
   .home-link {
+    position: absolute;
     top: 2vw;
     left: 2vw;
   }
