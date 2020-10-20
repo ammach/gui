@@ -43,55 +43,49 @@ export function Overlay(props) {
   ));
 
   return (
-    <>
-      <div className="container-flex-overlay">
-        <Button
-          className="custom-btn-modal"
-          type="primary"
-          onClick={() =>
-            SetVisible({ modalVisible: true, closeButton: "inline-block" })
-          }
+    <div className="container-flex-overlay">
+      <Button
+        className="custom-btn-modal"
+        type="primary"
+        onClick={() =>
+          SetVisible({ modalVisible: true, closeButton: "inline-block" })
+        }
+      >
+        <div className="container-text-button">
+          <BulbOutlined className="icon-modal" />
+          <span className="title-button">{title}</span>
+        </div>
+      </Button>
+      <Button
+        className="modal-close-btn-modal"
+        type="primary"
+        shape="circle"
+        icon={<CloseOutlined />}
+        onClick={() => SetVisible({ modalVisible: false, closeButton: "none" })}
+        style={{ display: closeButton }}
+      />
+      <Modal
+        title={titleModal}
+        visible={modalVisible}
+        onOk={() => SetVisible({ modalVisible: false, closeButton: "none" })}
+        onCancel={() =>
+          SetVisible({ modalVisible: false, closeButton: "none" })
+        }
+        className="custom-modal"
+        width={isMobileOrTablet ? 650 : 550}
+        footer={null}
+        centered
+        closable={false}
+      >
+        <Carousel
+          draggable={true}
+          arrows={true}
+          prevArrow={<LeftOutlined />}
+          nextArrow={<RightOutlined />}
         >
-          <div className="container-text-button">
-            <BulbOutlined className="icon-modal" />
-            <span className="title-button">
-              Comment réduire son empreinte ?
-            </span>
-          </div>
-        </Button>
-        <Button
-          className="modal-close-btn-modal"
-          type="primary"
-          shape="circle"
-          icon={<CloseOutlined />}
-          onClick={() =>
-            SetVisible({ modalVisible: false, closeButton: "none" })
-          }
-          style={{ display: closeButton }}
-        />
-        <Modal
-          title={titleModal}
-          visible={modalVisible}
-          onOk={() => SetVisible({ modalVisible: false, closeButton: "none" })}
-          onCancel={() =>
-            SetVisible({ modalVisible: false, closeButton: "none" })
-          }
-          className="custom-modal"
-          width={isMobileOrTablet ? 650 : 550}
-          footer={null}
-          centered
-          closable={false}
-        >
-          <Carousel
-            draggable={true}
-            arrows={true}
-            prevArrow={<LeftOutlined />}
-            nextArrow={<RightOutlined />}
-          >
-            {tiles}
-          </Carousel>
-        </Modal>
-      </div>
-    </>
+          {tiles}
+        </Carousel>
+      </Modal>
+    </div>
   );
 }

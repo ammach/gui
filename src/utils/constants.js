@@ -99,13 +99,15 @@ export const LIRE_PLUS = "... LIRE PLUS";
 // introduction
 export const INTRODUCTION_QUESTION1 = "Nombre de jours travaillés par an";
 export const INTRODUCTION_QUESTION1_INFOS =
-  "Prends en compte tes jours de télétravail ici.";
+  "Prends en compte tes jours de télétravail ici. (≈ 218 jours)";
 export const INTRODUCTION_QUESTION1_ERROR_MSG =
   "⚠ Merci de saisir votre réponse";
 export const INTRODUCTION_QUESTION2 = "Ancienneté dans le COJO (en mois)";
 export const INTRODUCTION_QUESTION2_ERROR_MSG =
   "⚠ Merci de saisir votre réponse";
 export const INTRODUCTION_QUESTION3 = "Nombre de jours de télétravail par mois";
+export const INTRODUCTION_QUESTION3_INFOS =
+  "10 jours avec le système d'équipe.";
 export const INTRODUCTION_QUESTION3_ERROR_MSG =
   "⚠ Merci de saisir votre réponse";
 
@@ -127,7 +129,7 @@ export const EMPREINTE_OVERLAY_TITLE =
 export const TAILLE_STOCKAGE =
   "Taille de votre stockage en ligne, type SharePoint/OneDrive (en Go)";
 export const NBR_RECHERCHE =
-  "Nombre d'heures passées à recherche sur internet à des fins professionnelles (hors streaming) par jour (en moyenne)";
+  "Nombre d'heures passées à faire des recherches sur internet à des fins professionnelles (hors streaming) par jour (en moyenne)";
 export const NBR_CONFERENCE =
   "Nombre d'heures passées en conférence visio par jour (en moyenne)";
 export const NBR_STREAMING =
@@ -176,7 +178,7 @@ export const SAVIER_VOUS_DEPLACEMENT =
 
 // Déplacements
 export const REPAS_QUESTION1 =
-  "Vos repas sont plutôt constitués de viandes rouges, de viandes blanches/poissons ou végétariens";
+  "De quoi sont majoritairement composés vos repas au bureau ?";
 export const REPAS_QUESTION1_INFO =
   "Coche 5 cases pour tes 5 déjeuners au boulot de la semaine !";
 export const REPAS_QUESTION1_ERROR_MSG = "⚠ Merci de saisir votre réponse";
@@ -306,8 +308,6 @@ export const EQUIPMENT_QUESTION10 = "Avez-vous la fibre chez vous ?";
 export const EQUIPMENT_QUESTION11 =
   "Nombre d'appareils électroniques partagés (chaine hifi, console de jeu vidéo de salon, imprimantes)";
 export const EQUIPMENT_QUESTION12 = "Appareils renouvelés en moyenne tous les";
-export const OVERLAY_TITLE_EQUIPMENT =
-  "Comment optimiser ta consommation d’énergie ?";
 export const EQUIPMENT_ERROR_MSG = "⚠ Merci de saisir votre réponse";
 export const OVERLAY_SOUSTEXTE_EQUIPMENT = "";
 export const EQUIPMENT_SAVIEZ_VOUS =

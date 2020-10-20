@@ -39,7 +39,6 @@
 }
 .title-button {
   margin: 0 auto;
-  text-transform: lowercase;
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: 600;
@@ -68,7 +67,6 @@
 
 .title-modal {
   font-family: Source Sans Pro;
-  text-transform: lowercase;
   text-align: center;
   font-style: italic;
   color: black;
@@ -184,7 +182,7 @@
     border-radius: 100%;
   }
   .title-button {
-    font-size: 4vw;
+    font-size: 15px;
   }
   .ant-modal-wrap {
     background-color: black;
@@ -218,7 +216,7 @@
   }
 
   .title-button {
-    font-size: var(--tablet-input-font-size);
+    font-size: 24px;
   }
 
   .custom-modal .icon-modal {

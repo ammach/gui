@@ -68,6 +68,10 @@
   margin-top: 40px;
 }
 
+.overlay-consommation .title-button {
+  font-size: 16px;
+}
+
 @media (max-width: 767px) {
   .mobile-wizard-container {
     margin-bottom: 96px;
@@ -85,6 +89,14 @@
   .form-questions-title {
     font-weight: normal;
     font-size: 4vw;
+  }
+
+  .overlay-house .title-button {
+    font-size: 13px;
+  }
+
+  .overlay-consommation .title-button {
+    font-size: 12px;
   }
 }
 
@@ -104,5 +116,9 @@
   .form-questions-title {
     font-weight: normal;
     font-size: 3vw;
+  }
+
+  .overlay-consommation .title-button {
+    font-size: 24px;
   }
 }

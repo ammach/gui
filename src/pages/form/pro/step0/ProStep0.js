@@ -14,6 +14,7 @@ import {
   INTRODUCTION_QUESTION2,
   INTRODUCTION_QUESTION2_ERROR_MSG,
   INTRODUCTION_QUESTION3,
+  INTRODUCTION_QUESTION3_INFOS,
   INTRODUCTION_QUESTION3_ERROR_MSG,
 } from "@utils/constants";
 
@@ -88,6 +89,7 @@ export function ProStep0({ step, setNextStep }) {
         <div className="forms-margin">
           <FormItemInputNumber
             name="5f5541ba9b096"
+            tooltipTitle={INTRODUCTION_QUESTION3_INFOS}
             label={INTRODUCTION_QUESTION3}
             rules={[
               { required: true, message: INTRODUCTION_QUESTION3_ERROR_MSG },
