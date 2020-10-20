@@ -1,9 +1,11 @@
+import { EMPREINTE_OVERLAY_TITLE } from "@utils/constants";
+
 export const QUESTION2_DEFAULT_VALUE = 16.5;
 
 export const overlayItems = [
   {
     image: "/images/empreinte-pop-conseils.jpg",
-    title: "comment connaître la taille de ta boîte mail ?",
+    title: EMPREINTE_OVERLAY_TITLE,
   },
 ];
 

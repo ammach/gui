@@ -146,26 +146,28 @@ export function PersoStep1({ step, setNextStep }) {
           />
         </div>
         <div className="forms-margin">
-          <Overlay
-            title={OVERLAY_TITLE_HOUSE}
-            items={[
-              {
-                image: "/images/conseil.png",
-                sousText: [
-                  "Encore plus de conseils pratiques sur : ",
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ color: "black" }}
-                    href={OVERLAY_SOUSTEXTE_HOUSE}
-                  >
-                    {OVERLAY_SOUSTEXTE_HOUSE}
-                  </a>,
-                  " (ADEME, 2020)",
-                ],
-              },
-            ]}
-          />
+          <div className="overlay-house">
+            <Overlay
+              title={OVERLAY_TITLE_HOUSE}
+              items={[
+                {
+                  image: "/images/conseil.png",
+                  sousText: [
+                    "Encore plus de conseils pratiques sur : ",
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: "black" }}
+                      href={OVERLAY_SOUSTEXTE_HOUSE}
+                    >
+                      {OVERLAY_SOUSTEXTE_HOUSE}
+                    </a>,
+                    " (ADEME, 2020)",
+                  ],
+                },
+              ]}
+            />
+          </div>
         </div>
         <div className="forms-margin">
           <FormItemInputNumberWithUnit

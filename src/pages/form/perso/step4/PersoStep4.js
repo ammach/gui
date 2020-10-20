@@ -101,10 +101,13 @@ export function PersoStep4({ step, setNextStep }) {
             tooltipTitle={NUMERIC_QUESTION1_TOOLTIP}
           />
         </div>
-        <Overlay
-          title="Consommation électrique en fonction de la connectique"
-          items={overlay_items}
-        />
+        <div className="overlay-consommation">
+          <Overlay
+            title="Consommation électrique en fonction de la connectique"
+            items={overlay_items}
+          />
+        </div>
+
         <div className="forms-margin">
           <FormItemMultipleInputNumber
             form={form}
